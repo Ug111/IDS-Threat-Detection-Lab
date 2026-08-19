@@ -1,7 +1,3 @@
-![Suricata Version](https://shields.io)
-![Lab Environment](https://shields.io)
-![Category](https://shields.io)
-
 <div align="center">
 
 # 🛡️ IDS Threat Detection Lab - Suricata
@@ -78,5 +74,11 @@ Skills Demonstrated
 ✔️ Real-time threat monitoring
 ✔️ Network packet analysis
 ✔️ EVE JSON alert format (SIEM-ready)
+
+
+## 🔮 Next-Gen Expansion: SIEM Integration
+Because this lab captures all events in the standard `eve.json` format, the logical next step is SIEM forwarding. 
+* To see how to correlate these alerts with authentication anomalies, check out my companion lab: [Splunk SSH Brute-Force Detection Lab](https://github.com).
+
 
 This lab demonstrates hands-on understanding of threat detection workflows and the detection layer of SOC operations.
