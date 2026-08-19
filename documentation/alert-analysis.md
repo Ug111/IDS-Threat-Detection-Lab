@@ -16,12 +16,12 @@
 ✅ Real-time packet capture active
 
 ## Attack Detection Results
-| Attack Type |   Detection Rule|   Status     |
-|-------------|-----------------|--------------|
-| ICMP Ping      |  SID 1000001 |  ✅ Detected |
-| Port Scan (nmap)| SID 1000002 |  ✅ Detected |    
-| SSH Connection |  SID 1000003 |  ✅ Detected |
-| HTTP Traffic   |  SID 1000004 |  ✅ Detected |
+| Attack Type     | Detection Rule |   Status     |     
+| -------------   |  ------------  | -----------  |
+| ICMP Ping       |   SID 1000001  |  ✅ Detected |
+| Port Scan (nmap)|   SID 1000002  |  ✅ Detected |    
+| SSH Connection  |   SID 1000003  |  ✅ Detected |
+| HTTP Traffic    |   SID 1000004  |  ✅ Detected |
 
 ## Technical Achievements
 - 4 custom detection rules created from scratch
