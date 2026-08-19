@@ -1,3 +1,8 @@
+![Suricata Version](https://shields.io)
+![Lab Environment](https://shields.io)
+![Category](https://shields.io)
+
+
 # IDS Threat Detection Lab - Suricata
 
 ## Overview
