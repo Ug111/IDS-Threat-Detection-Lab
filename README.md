@@ -2,6 +2,47 @@
 ![Lab Environment](https://shields.io)
 ![Category](https://shields.io)
 
+<div align="center">
+
+# 🛡️ IDS Threat Detection Lab - Suricata
+
+  <p align="center">
+    Hands-on network security sandbox demonstrating real-time threat detection and security telemetry generation.
+  </p>
+
+[![Suricata Version](https://shields.io)](https://suricata.io)
+[![Lab Environment](https://shields.io)](https://virtualbox.org)
+[![SIEM Layer](https://shields.io)](https://github.com/Ug111/IDS-Threat-Detection-Lab)
+[![License](https://shields.io)](https://opensource.org)
+
+---
+</div>
+
+## 🌐 Lab Architecture
+
+To better visualize how the attack machine triggers the IDS, the lab utilizes an isolated virtual network mapping malicious activity directly into Suricata's ingestion engine:
+
+```mermaid
+graph LR
+    subgraph Isolated VirtualBox Network (192.168.56.0/24)
+        Kali["🐱 Kali Linux (Attacker)<br>192.168.56.102"] 
+        Ubuntu["🐧 Ubuntu 20.04 (IDS Server)<br>192.168.56.101"]
+    end
+
+    subgraph Suricata Engine
+        Interface["📋 Interface: enp0s8"]
+        Rules["⚙️ Custom local.rules"]
+        Logs["📂 EVE JSON Telemetry"]
+    end
+
+    Kali -->|Generates Scans / Pings / Exploits| Ubuntu
+    Ubuntu --> Interface
+    Interface --> Rules
+    Rules -->|SIEM-Ready Alerts| Logs
+```
+
+## 📝 Overview
+
 
 # IDS Threat Detection Lab - Suricata
 
