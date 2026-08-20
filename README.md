@@ -51,7 +51,7 @@ Hands-on Suricata IDS lab demonstrating real-time threat detection and network p
 - ** Step 1 - Generate Network Traffic
 # Port Scanning
 nmap 192.168.56.101
-!
+![Attack Simulation](
 
 - ** Step 2 - Suricata Detection
 ```bash
