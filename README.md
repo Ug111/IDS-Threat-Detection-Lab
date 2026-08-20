@@ -37,9 +37,6 @@ graph LR
     Rules -->|SIEM-Ready Alerts| Logs
 ```
 
-## 📝 Overview
-
-
 # IDS Threat Detection Lab - Suricata
 
 ## Overview
@@ -49,6 +46,25 @@ Hands-on Suricata IDS lab demonstrating real-time threat detection and network p
 - **IDS Server:** Ubuntu 20.04 (192.168.56.101) - Suricata 7.0.10
 - **Attack Machine:** Kali Linux (192.168.56.102)
 - **Network:** VirtualBox Host-Only (192.168.56.0/24)
+
+## Attack Simulation
+- ** Step 1 - Generate Network Traffic
+# Port Scanning
+nmap 192.168.56.101
+!
+
+- ** Step 2 - Suricata Detection
+```bash
+sudo suricata -c /etc/suricata/suricata.yaml -i enp0s8 -l /var/log/suricata -v
+Suricata successfully captures all network traffic on enp0s8 and this confirms
+that the custom rule signature was triggered by the simulated traffic
+!
+
+- ** Step 3 - EVE JSON validation
+EVE JSON format enables easy parsing and an
+All attacks generated detections in eve.json with proper timestamps,
+source/destination IPs, and protocol information
+!
 
 ## Detection Rules (Custom)
 1. ICMP Ping Detection (SID: 1000001)
