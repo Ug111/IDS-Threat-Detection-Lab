@@ -60,8 +60,7 @@ that the custom rule signature was triggered by the simulated traffic
 !
 
 - ** Step 3 - EVE JSON validation
-EVE JSON format enables easy parsing and an
-All attacks generated detections in eve.json with proper timestamps,
+EVE JSON format enables easy parsing and all attacks generated detections in eve.json with proper timestamps,
 source/destination IPs, and protocol information
 ![EVE JSON](screenshot/Eve_json_alerts.png)
 
