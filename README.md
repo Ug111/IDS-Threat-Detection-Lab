@@ -70,6 +70,12 @@ source/destination IPs, and protocol information
 - ** Step 4 - Detection Analysis
 - ## 📊 Alert Output Example (EVE JSON with Full Context)
 
+## Detection Rules (Custom)
+1. ICMP Ping Detection (SID: 1000001)
+2. Port Scan Detection (SID: 1000002)
+3. SSH Connection Attempt (SID: 1000003)
+4. HTTP Connection (SID: 1000004)
+
 ```json
 {
   "timestamp": "2026-08-20T12:34:56.789123+0000",
@@ -89,20 +95,16 @@ source/destination IPs, and protocol information
   }
 }
 
-## Detection Rules (Custom)
-1. ICMP Ping Detection (SID: 1000001)
-2. Port Scan Detection (SID: 1000002)
-3. SSH Connection Attempt (SID: 1000003)
-4. HTTP Connection (SID: 1000004)
-
 ## Quick Start
 ```bash
 sudo suricata -c /etc/suricata/suricata.yaml -i enp0s8 -l /var/log/suricata -v
 
-Test Result
+## Test Result
 ✅ All attacks detected in real-time
 ✅ EVE JSON alerts captured successfully
 ✅ Zero false positives in lab environment
+
+## Files
 • Suricata-config/suricata.yaml-Suricata configuration
 • Suricata-rules/local.rules-Custom detection rules
 • detection-logs/eve.json-Captured network events
@@ -117,7 +119,8 @@ Skills Demonstrated
 
 ## 🔮 Next-Gen Expansion: SIEM Integration
 Because this lab captures all events in the standard `eve.json` format, the logical next step is SIEM forwarding. 
-* To see how to correlate these alerts with authentication anomalies, check out my companion lab: [Splunk SSH Brute-Force Detection Lab](https://github.com).
+* To see how to correlate these alerts with authentication anomalies:
+"check out my companion lab: [SSH Brute-Force Detection & Analysis -Splunk SIEM](https://github.com/Ug111/SSH-Brute-Force-Detection-Splunk)"
 
 
 This lab demonstrates hands-on understanding of threat detection workflows and the detection layer of SOC operations.
