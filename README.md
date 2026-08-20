@@ -54,7 +54,6 @@ nmap 192.168.56.101
 ![Attack Simulation](screenshot/Nmap_scan.png)
 
 - ** Step 2 - Suricata Detection
-```bash
 sudo suricata -c /etc/suricata/suricata.yaml -i enp0s8 -l /var/log/suricata -v
 Suricata successfully captures all network traffic on enp0s8 and this confirms
 that the custom rule signature was triggered by the simulated traffic
@@ -64,7 +63,7 @@ that the custom rule signature was triggered by the simulated traffic
 EVE JSON format enables easy parsing and an
 All attacks generated detections in eve.json with proper timestamps,
 source/destination IPs, and protocol information
-!
+![EVE JSON](screenshot/Eve.json_Alerts.png)
 
 ## Detection Rules (Custom)
 1. ICMP Ping Detection (SID: 1000001)
