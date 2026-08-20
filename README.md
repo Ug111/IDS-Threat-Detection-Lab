@@ -8,7 +8,7 @@
 
 [![Suricata Version](https://shields.io)](https://suricata.io)
 [![Lab Environment](https://shields.io)](https://virtualbox.org)
-[![SIEM Layer](https://shields.io)](https://github.com/Ug111/IDS-Threat-Detection-Lab)
+[![SIEM Layer](https://shields.io)](https://github.com)
 [![License](https://shields.io)](https://opensource.org)
 
 ---
@@ -20,12 +20,12 @@ To better visualize how the attack machine triggers the IDS, the lab utilizes an
 
 ```mermaid
 graph LR
-    subgraph Isolated VirtualBox Network (192.168.56.0/24)
+    subgraph Isolated_Network ["Isolated VirtualBox Network: 192.168.56.0/24"]
         Kali["🐱 Kali Linux (Attacker)<br>192.168.56.102"] 
         Ubuntu["🐧 Ubuntu 20.04 (IDS Server)<br>192.168.56.101"]
     end
 
-    subgraph Suricata Engine
+    subgraph Suricata_Engine ["Suricata Engine"]
         Interface["📋 Interface: enp0s8"]
         Rules["⚙️ Custom local.rules"]
         Logs["📂 EVE JSON Telemetry"]
