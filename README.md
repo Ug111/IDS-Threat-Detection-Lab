@@ -65,6 +65,28 @@ All attacks generated detections in eve.json with proper timestamps,
 source/destination IPs, and protocol information
 ![EVE JSON](screenshot/Eve.json_Alerts.png)
 
+- ** Step 4 - Detection Analysis
+- ## 📊 Alert Output Example (EVE JSON with Full Context)
+
+```json
+{
+  "timestamp": "2026-08-20T12:34:56.789123+0000",
+  "src_ip": "192.168.56.102",
+  "src_port": 54321,
+  "dst_ip": "192.168.56.101",
+  "dst_port": 22,
+  "proto": "TCP",
+  "alert": {
+    "signature": "SSH Connection Attempt",
+    "severity": 3,
+    "signature_id": 1000003
+  },
+  "tcp": {
+    "flags": "SYN",
+    "window": 65535
+  }
+}
+
 ## Detection Rules (Custom)
 1. ICMP Ping Detection (SID: 1000001)
 2. Port Scan Detection (SID: 1000002)
