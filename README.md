@@ -57,7 +57,7 @@ nmap 192.168.56.101
 sudo suricata -c /etc/suricata/suricata.yaml -i enp0s8 -l /var/log/suricata -v
 Suricata successfully captures all network traffic on enp0s8 and this confirms
 that the custom rule signature was triggered by the simulated traffic
-!
+![Suricata Activated](screenshot/Suricata Actively Running.png)
 
 - ** Step 3 - EVE JSON validation
 EVE JSON format enables easy parsing and all attacks generated detections in eve.json with proper timestamps,
