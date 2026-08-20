@@ -63,7 +63,7 @@ that the custom rule signature was triggered by the simulated traffic
 EVE JSON format enables easy parsing and an
 All attacks generated detections in eve.json with proper timestamps,
 source/destination IPs, and protocol information
-![EVE JSON](screenshot/Eve.json_Alerts.png)
+![EVE JSON](screenshot/Eve.json_alerts.png)
 
 - ** Step 4 - Detection Analysis
 - ## 📊 Alert Output Example (EVE JSON with Full Context)
