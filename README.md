@@ -67,7 +67,6 @@ EVE JSON format enables easy parsing and all attacks generated detections in eve
 source/destination IPs, and protocol information
 ![EVE JSON](screenshot/Eve_json_alerts.png)
 
-- ** Step 4 - Detection Analysis
 - ## 📊 Alert Output Example (EVE JSON with Full Context)
 
 ## Detection Rules (Custom)
